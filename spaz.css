@@ -1,0 +1,168 @@
+/* ===== Base ===== */
+body {
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== Header ===== */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: greenyellow;
+    padding: 15px;
+    border-radius: 7.5px;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+/* ===== Menu ===== */
+nav {
+    background-color: white;
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 350px;
+    border: ridge 2.5px royalblue;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px royalblue;
+}
+
+nav ol, nav ul {
+    padding-left: 20px;
+}
+
+nav li {
+    margin-bottom: 5px;
+}
+
+nav ol li a:hover {
+    color: white;
+    background-color: royalblue;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: goldenrod;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* ===== Main ===== */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+}
+
+section {
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: groove 2.5px royalblue;
+    border-right: groove 2.5px royalblue;
+    border-radius: 7px;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-top: groove 2.5px greenyellow;
+    border-bottom: groove 2.5px greenyellow;
+    border-radius: 15px;
+}
+
+.joli{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 7.5px;
+    margin-right: 15px;
+    text-align: center;
+    color: blue;
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+#cntct{
+    color: blue;
+}
+/* ===== Titres ===== */
+h2 {
+    color: blue;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 7.5px;
+    padding: 5px;
+}
+
+h3 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    background-color: blue;
+    border-radius: 7.5px;
+    color: white;
+    padding: 5px;
+}
+
+/* ===== Paragraphes ===== */
+p::first-letter {
+    margin-left: 10px;
+    text-transform: capitalize;
+    color: blue;
+    font-size: 20px;
+}
+p{
+    text-align: justify;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    nav {
+        width: 95%;
+    }
+    h2, h3 {
+        width: 90%;
+        font-size: 22px;
+    }
+}
